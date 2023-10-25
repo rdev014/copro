@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About-Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remix3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="first_nav_hero_about">
+
+        <!-- navber -->
+        <div class="main-display">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                        <div class="logo">
+                            <a href="index.html"> <img src="images/logo.webp" alt=""></a>
+                        </div>
+                        <!-- Left links -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-changes">
+                            <li id="myBtn" class="login">
+                                <a class="nav-link active blink" style="color: red; font-size: larger;" aria-current="page" href="#">Apply Internship</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="dropdown drp">
+                                <a href="services.html">Services</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="data-analytics.html">Data Analytics</a></li>
+                                    <li><a href="ai-and-ml-development.html">AI & ML Development</a></li>
+                                    <li><a href="website-design.html">Website Design</a></li>
+                                    <li><a href="moblie-app-development.html">Moblie App Development</a></li>
+                                    <li><a href="digital-marketing-services.html">Digital Marketing</a></li>
+                                    <li><a href="design-and-branding.html">Design & Branding</a></li>
+                                </ul>
+                            </li>
+
+                            
+                            <div id="myModal" class="modal">
+                                <div class="modal-cont" style="display: block;">
+                                    <div class="modal-box">
+                                        <span class="close">×</span>
+                                        <form class="login-box" action="intern.php" method="post"
+                                            enctype="multipart/form-data" name="form"
+                                            onsubmit="return Form2_Validator(this)">
+                                            <h1> INTERNSHIP FORM </h1>
+                                            <div class="form-group main-f">
+                                                <input type="text" name="S_name" id="S_name" class="form-control"
+                                                    placeholder="Full Name" required="">
+
+                                                <input type="text" name="S_fname" id="S_fname" class="form-control"
+                                                    placeholder="Father Name" required="">
+
+                                            </div>
+                                            <div class="form-group main-f">
+                                                <input type="email" name="S_email" id="S_email" class="form-control"
+                                                    placeholder="Your Email" required="">
+
+                                                <input type="text" name="S_phone" id="S_phone" class="form-control"
+                                                    placeholder="Phone No" required="">
+
+
+                                            </div>
+
+                                            <div class="form-group main-f">
+                                                <input type="text" name="Location_in" id="Location_in"
+                                                    class="form-control" placeholder="Institute Name">
+
+                                                <select id="dropdown" name="s_type" class="form-control" required="">
+                                                    <option disabled="" selected="" value="">Technology</option>
+                                                    <option value="Php">Php</option>
+                                                    <option value="Java">Java</option>
+                                                    <option value="IOT">IOT</option>
+                                                    <option value="Big Data">Big Data</option>
+                                                    <option value="Digital Marketing">Digital Marketing</option>
+                                                    <option value="Laravel">Laravel</option>
+                                                    <option value="Kotlin">Kotlin</option>
+                                                    <option value="Cloud Computing">Cloud Computing</option>
+                                                    <option value="Machine Learning/AI">Machine Learning/AI</option>
+                                                    <option value="Pyhton">Pyhton</option>
+                                                    <option value="Finance/HR/Marketing">Finance/HR/Marketing</option>
+                                                    <option value="Embedded System">Embedded System</option>
+                                                    <option value="Software Testing">Software Testing</option>
+                                                    <option value="Ethical Hacking">Ethical Hacking</option>
+                                                    <option value="Android">Android</option>
+                                                    <option value="Dot Net">Dot Net</option>
+                                                    <option value="Graphic Desgining">Graphic Desgining</option>
+                                                    <option value="Java Script">Java Script</option>
+                                                    <option value="Flutter">Flutter</option>
+                                                    <option value="Node Js">Node Js</option>
+                                                    <option value="Angular">Angular</option>
+                                                    <option value="MERN">MERN</option>
+                                                    <option value="MEAN">MEAN</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Data Structure">Data Structure</option>
+                                                    <option value="Data Science">Data Science</option>
+                                                    <option value="Full Stack Development">Full Stack Development
+                                                    </option>
+                                                    <option value="Web Designing">Web Designing</option>
+                                                    <option value="React Native">React Native</option>
+                                                    <option value="Autocad">Autocad</option>
+                                                    <option value="PLC">PLC</option>
+                                                    <option value="SCADA">SCADA</option>
+                                                    <option value="CAD/CAM">CAD/CAM</option>
+                                                    <option value="Full Stack Developer">Full Stack Developer</option>
+                                                    <option value="Networking">Networking</option>
+                                                    <option value="Devops">Devops</option>
+                                                    <option value="Solid Works">Solid Works</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Deep Learning">Deep Learning</option>
+                                                    <option value="UI/UX Designing">UI/UX Designing</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+
+
+                                            </div>
+
+                                            <div class="main-b" id="Location_form" name="Location_form">
+                                                <h3>Duration</h3>
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main-o" name="radio">
+                                                    <label for="main-o" value="6-Month">6
+                                                        Month</label>
+                                                </div>
+
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main" name="radio">
+                                                    <label for="main" value="6-Week">6
+                                                        Week</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea id="Location_to" name="Location_to" class="input-textarea"
+                                                    placeholder="Address"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea id="message" name="message" class="input-textarea"
+                                                    placeholder="Why you want to do internship?"></textarea>
+                                            </div>
+
+                                            <button class="cancel">Cancel</button>
+                                            <button class="cancel" value="submit">Submit</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
+                            </li>
+                            <nav role='navigation'>
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="index.html" class="side-manu">
+                                            <img src="images/logo.webp" alt="">
+                                        </a>
+                                        <p class="mt-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <a href="#" class="btn-hover1">Discover More</a>
+                                        <hr>
+                                        <h5 class="mt-4 mb-4 text-white">Connected details:</h5>
+                                        <ul class="d-flex flex-column ">
+                                            <li>
+                                                <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                                <a href="#">yourname@email.com</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                                <a href="#">+123-456-7890</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-clock"></i></a>
+                                                <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                                    Weekend Day</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- mobile nav -->
+        <div class="main-mobile">
+            <div class="viewport">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.webp" alt=""></a>
+                    </div>
+                    <div class="menu clearfix" id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About-Us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown"
+                                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="industrial-construction.html">Industrial
+                                            construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="commercial-construction.html">Commercial
+                                            Constructiont</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="residential-construction.html">Residential
+                                            Construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="govt-construction.html">Govt Construction</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                        <div class="buttons">
+                            <a href="#menu" class="mb mbo" title="open the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                <span class="s3"></span>
+                                open the menu
+                            </a>
+                            <a href="#0" class="mb mbc" title="close the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                close the menu
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#0" tabindex="-1" class="overlay" title="close the menu">overlay</a>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <div class="ttm-page-title-row-web">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title-box right">
+                            <div class="page-title-heading">
+                                <h1 class="text-white">Website Development</h1>
+                            </div>
+                            <div class="breadcrumb-wrapper">
+                                <span>
+                                    <a title="Homepage" class="text-white" href="index.html">Home</a>
+                                </span>
+                                <span class="ttm-bread-sep text-white">&nbsp; / &nbsp;</span>
+                                <span class="text-white">Data Analytics </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="service-details-area pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="service-details-wrap">
+
+                            <h1>Web Development </h1>
+                            <p style="text-align:justify;">Mitisha Softech Pvt. Ltd. is a leading data analytics company
+                                specializing in harnessing the power of data to drive informed decision-making. With a
+                                team
+                                of highly skilled data scientists and analysts, we offer comprehensive data analytics
+                                solutions tailored to your specific business needs. Our cutting-edge technologies and
+                                advanced analytics tools enable us to extract valuable insights from your data, helping
+                                you
+                                optimize operations, identify growth opportunities, and enhance customer experiences.
+                                Whether you're in finance, healthcare, e-commerce, or any other industry, Mitisha
+                                Softech
+                                Pvt. Ltd. is your trusted partner for unlocking the full potential of your data and
+                                achieving sustainable success.
+                            </p>
+
+                            <div class="single-item" style=" margin-bottom:10px;">
+                                <img src="https://img.freepik.com/free-photo/3d-rendering-cartoon-like-man-working-computer_23-2150797574.jpg?t=st=1698135359~exp=1698138959~hmac=8ada994dc214c8f7e18284cda46dd3a188d57a823d5c834dfedde59ebe8c8920&w=740"
+                                    alt="International courier services">
+                            </div>
+
+                            <p style="text-align:justify;"> Mitisha Softech Pvt. Ltd. is a distinguished leader in the
+                                realm
+                                of data analytics. Our seasoned team of data scientists and analysts is committed to
+                                transforming raw data into actionable insights. We specialize in tailoring data
+                                analytics
+                                solutions to meet your precise business requirements. Leveraging state-of-the-art
+                                technologies and cutting-edge analytics tools, we unearth invaluable insights from your
+                                data
+                                reservoirs. This empowers you to optimize operations, discover growth opportunities, and
+                                elevate customer experiences. Irrespective of your industry, be it finance, healthcare,
+                                e-commerce, or any other sector, Mitisha Softech Pvt. Ltd. is your steadfast ally for
+                                unleashing the full potential of your data, ensuring sustained success.
+                            </p>
+
+                            <div class="s-details-into mt-5">
+                                <h2>Services We’re Provided</h2>
+                                <h3>Our Web Development Services</h2>
+                                    <ul class="s-details-list">
+                                        <li>Web Application Development</li>
+                                        <li>Small Business Website</li>
+                                        <li>CMS Web Development</li>
+                                        <li>Website Design & Development</li>
+                                    </ul>
+                            </div>
+
+
+
+                            <div class="s-details-into">
+                                <h3>Mitisha Softech Pvt. Ltd. Data Analytics: Key Insights and Analysis</h3>
+                                <ul class="s-details-list">
+                                    <li>Descriptive Analytics. Business intelligence and data analysis rely heavily on
+                                        descriptive analytics.</li>
+                                    <li>Predictive data analytics. Predictive analytics may be the most commonly used
+                                        category of data analytics.</li>
+                                    <li>Diagnostic Analytics.</li>
+                                    <li>Predictive Analytics.</li>
+                                    <li>Prescriptive Analytics.</li>
+                                    <li>Cognitive Analytics.</li>
+                                    <li>Prescriptive data analytics.</li>
+                                    <li>Diagnostic data analytics.</li>
+                                    <li>Descriptive data analytics.</li>
+
+                                </ul>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="service-sidebar-area">
+                            <div class="service-list service-cardd">
+                                <h3 class="service-details-title">Our Services</h3>
+                                <ul>
+                                    <li>
+                                        <a href="data-analytics.html"> Data Analytics </a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+                                    <li>
+                                        <a href="ai-and-ml-development.html"> AI & ML Development </a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+                                    <li>
+                                        <a href="website-design.html"> Website Design </a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+                                    <li>
+                                        <a href="moblie-app-development.html"> Moblie App Development </a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+                                    <li>
+                                        <a href="digital-marketing-services.html">Digital Marketing Services </a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+                                    <li>
+                                        <a href="design-and-branding.html"> Design & Branding</a>
+                                        <i class='bx bx-check'></i>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="service-list service-card">
+                                <h3 class="service-details-title">Contact Info</h3>
+                                <ul>
+                                    <li>
+                                        <a href="tel:+91-7056937000">
+                                            +91-7707934521
+                                            <i class='bx bx-phone-call bx-rotate-270'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:mitishasoftech@gmail.com">
+                                            <span class="mitishasoftech@gmail.com"
+                                                data-cfemail="7a121f1616153a0a081f0c150054191517">mitishasoftech@gmail.com</span>
+                                            <i class='bx bx-envelope'></i>
+                                        </a>
+                                    </li>
+                                    <li class="single-c">
+                                        <a
+                                            href="https://www.google.com/maps/place/Mitisha+Softech+Pvt+Ltd/@30.7021815,76.6781374,17z/data=!3m2!4b1!5s0x390fef0397b92add:0x73317094c210b4b5!4m6!3m5!1s0x390fef8c87691c2b:0x1e625b93fab0a93a!8m2!3d30.702177!4d76.6830083!16s%2Fg%2F11sjp7lh72?entry=ttu">
+                                            F426, First Floor, Industrial Area, Phase 8B,
+                                            <i class='bx bx-location-plus'></i></a>
+                                    </li>
+                                    <li style="color: lightblue;">
+                                        9:00 AM – 6:00 PM
+                                        <i class='bx bx-time'></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="why-us mt-5">
+
+                                <div class="small-list-feature">
+                                    <div class="register-form">
+                                        <div class="top-header">
+                                            <h3>Register now</h3>
+                                            <span>More than 150 s are free for this month</span>
+                                        </div>
+                                        <form class="register-form-max" action="process.php" method="post"
+                                            enctype="multipart/form-data" name="form"
+                                            onsubmit="return Form2_Validator(this)">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="form-group">
+                                                        <input type="text" name="S_name" id="S_name"
+                                                            class="form-control" required=""
+                                                            data-error="Please Enter Your Name" placeholder="Your name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="S_email"
+                                                            id="S_email" required="" data-error="Please Enter Email"
+                                                            placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <select class="form-select" name="s_type" id="s_type"
+                                                            aria-label="Default select example">
+                                                            <option selected="">Select Service </option>
+                                                            <option value="Data Analytics">Data Analytics </option>
+                                                            <option value="AI & ML Development">AI & ML Development
+                                                            </option>
+                                                            <option value="Website Design ">Website Design </option>
+                                                            <option value="Moblie App Development">Moblie App
+                                                                Development
+                                                            </option>
+                                                            <option value="Digital Marketing Services">Digital Marketing
+                                                                Services</option>
+                                                            <option value="Design & Branding">Design & Branding</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="S_phone"
+                                                            id="S_phone" required="" data-error="Please Enter Phone"
+                                                            placeholder="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="form-group">
+                                                        <textarea class="uni-q" name="message" id="message" cols="30"
+                                                            rows="4" placeholder="Your Message..."></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12 col-md-12 text-center">
+                                                    <button type="submit" class="default-btn border-radius-50">
+                                                        Get it now
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted main-ftr">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ftr ">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="images/logo.webp" alt="">
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Company
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="about-us.html" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="services.html" class="text-reset">Services</a>
+                            </p>
+                            <p>
+                                <a href="blog.html" class="text-reset">Blog</a>
+                            </p>
+                            <p>
+                                <a href="blog-details.html" class="text-reset">Blog Details</a>
+                            </p>
+                            <p>
+                                <a href="contact-us.html" class="text-reset">Contact Us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="data-analytics.html" class="text-reset">Data Analytics</a>
+                            </p>
+                            <p>
+                                <a href="ai-and-ml-development.html" class="text-reset">AI & ML Development</a>
+                            </p>
+                            <p>
+                                <a href="website-design.html" class="text-reset">Website Design</a>
+                            </p>
+                            <p>
+                                <a href="moblie-app-development.html" class="text-reset">Moblie App Development</a>
+                            </p>
+                            <p>
+                                <a href="digital-marketing-services.html" class="text-reset">Digital Marketing Services</a>
+                            </p>
+                            <p>
+                                <a href="design-and-branding.html" class="text-reset">Design & Branding</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4 ftr-last" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">| Designed By:<a
+                        href="https://www.futuretouch.in/" class="one-chng-f"> Mitisha Softech Pvt. Ltd. </a>| All
+                    rights reserved.</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/348356cdb0.js" crossorigin="anonymous"></script>
+
+    <!-- MDB bootstrap-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
+    <!-- animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- close -->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 27:
+                    modal.style.display = "none";
+                    break;
+                default:
+                    return;
+            }
+        };
+    </script>
+</body>
+
+</html>

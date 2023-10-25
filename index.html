@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remix3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="first_nav_hero_about">
+
+        <!-- navber -->
+        <div class="main-display">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                        <div class="logo">
+                            <a href="index.html" > <img src="images/logo.webp" alt=""></a>
+                        </div>
+                        <!-- Left links -->
+                        
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-changes">
+                            <li id="myBtn" class="login">
+                                <a class="nav-link active blink" style="color: red; font-size: larger;" aria-current="page" href="#">Apply Internship</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="dropdown drp">
+                                <a href="services.html">Services</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="data-analytics.html">Data Analytics</a></li>
+                                    <li><a href="ai-and-ml-development.html">AI & ML Development</a></li>
+                                    <li><a href="website-design.html">Website Design</a></li>
+                                    <li><a href="moblie-app-development.html">Moblie App Development</a></li>
+                                    <li><a href="digital-marketing-services.html">Digital Marketing</a></li>
+                                    <li><a href="design-and-branding.html">Design & Branding</a></li>
+                                </ul>
+                            </li>
+
+                            
+                            <div id="myModal" class="modal">
+                                <div class="modal-cont" style="display: block;">
+                                    <div class="modal-box">
+                                        <span class="close">×</span>
+                                        <form class="login-box" action="intern.php" method="post"
+                                            enctype="multipart/form-data" name="form"
+                                            onsubmit="return Form2_Validator(this)">
+                                            <h1> INTERNSHIP FORM </h1>
+                                            <div class="form-group main-f">
+                                                <input type="text" name="S_name" id="S_name" class="form-control"
+                                                    placeholder="Full Name" required="">
+
+                                                <input type="text" name="S_fname" id="S_fname" class="form-control"
+                                                    placeholder="Father Name" required="">
+
+                                            </div>
+                                            <div class="form-group main-f">
+                                                <input type="email" name="S_email" id="S_email" class="form-control"
+                                                    placeholder="Your Email" required="">
+
+                                                <input type="text" name="S_phone" id="S_phone" class="form-control"
+                                                    placeholder="Phone No" required="">
+
+
+                                            </div>
+
+                                            <div class="form-group main-f">
+                                                <input type="text" name="Location_in" id="Location_in"
+                                                    class="form-control" placeholder="Institute Name">
+
+                                                <select id="dropdown" name="s_type" class="form-control" required="">
+                                                    <option disabled="" selected="" value="">Technology</option>
+                                                    <option value="Php">Php</option>
+                                                    <option value="Java">Java</option>
+                                                    <option value="IOT">IOT</option>
+                                                    <option value="Big Data">Big Data</option>
+                                                    <option value="Digital Marketing">Digital Marketing</option>
+                                                    <option value="Laravel">Laravel</option>
+                                                    <option value="Kotlin">Kotlin</option>
+                                                    <option value="Cloud Computing">Cloud Computing</option>
+                                                    <option value="Machine Learning/AI">Machine Learning/AI</option>
+                                                    <option value="Pyhton">Pyhton</option>
+                                                    <option value="Finance/HR/Marketing">Finance/HR/Marketing</option>
+                                                    <option value="Embedded System">Embedded System</option>
+                                                    <option value="Software Testing">Software Testing</option>
+                                                    <option value="Ethical Hacking">Ethical Hacking</option>
+                                                    <option value="Android">Android</option>
+                                                    <option value="Dot Net">Dot Net</option>
+                                                    <option value="Graphic Desgining">Graphic Desgining</option>
+                                                    <option value="Java Script">Java Script</option>
+                                                    <option value="Flutter">Flutter</option>
+                                                    <option value="Node Js">Node Js</option>
+                                                    <option value="Angular">Angular</option>
+                                                    <option value="MERN">MERN</option>
+                                                    <option value="MEAN">MEAN</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Data Structure">Data Structure</option>
+                                                    <option value="Data Science">Data Science</option>
+                                                    <option value="Full Stack Development">Full Stack Development
+                                                    </option>
+                                                    <option value="Web Designing">Web Designing</option>
+                                                    <option value="React Native">React Native</option>
+                                                    <option value="Autocad">Autocad</option>
+                                                    <option value="PLC">PLC</option>
+                                                    <option value="SCADA">SCADA</option>
+                                                    <option value="CAD/CAM">CAD/CAM</option>
+                                                    <option value="Full Stack Developer">Full Stack Developer</option>
+                                                    <option value="Networking">Networking</option>
+                                                    <option value="Devops">Devops</option>
+                                                    <option value="Solid Works">Solid Works</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Deep Learning">Deep Learning</option>
+                                                    <option value="UI/UX Designing">UI/UX Designing</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+
+
+                                            </div>
+
+                                            <div class="main-b" id="Location_form" name="Location_form">
+                                                <h3>Duration</h3>
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main-o" name="radio">
+                                                    <label for="main-o" value="6-Month">6
+                                                        Month</label>
+                                                </div>
+
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main" name="radio">
+                                                    <label for="main" value="6-Week">6
+                                                        Week</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea id="Location_to" name="Location_to" class="input-textarea"
+                                                    placeholder="Address"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea id="message" name="message" class="input-textarea"
+                                                    placeholder="Why you want to do internship?"></textarea>
+                                            </div>
+
+                                            <button class="cancel">Cancel</button>
+                                            <button class="cancel" value="submit">Submit</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
+                            </li>
+                            <nav role='navigation'>
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="index.html" class="side-manu">
+                                            <img src="images/logo.webp" alt="">
+                                        </a>
+                                        <p class="mt-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <a href="#" class="btn-hover1">Discover More</a>
+                                        <hr>
+                                        <h5 class="mt-4 mb-4 text-white">Connected details:</h5>
+                                        <ul class="d-flex flex-column ">
+                                            <li>
+                                                <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                                <a href="#">yourname@email.com</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                                <a href="#">+123-456-7890</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-clock"></i></a>
+                                                <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                                    Weekend Day</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- mobile nav -->
+        <div class="main-mobile">
+            <div class="viewport">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.webp" alt=""></a>
+                    </div>
+                    <div class="menu clearfix" id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About-Us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown"
+                                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="industrial-construction.html">Industrial
+                                            construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="commercial-construction.html">Commercial
+                                            Constructiont</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="residential-construction.html">Residential
+                                            Construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="govt-construction.html">Govt Construction</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                        <div class="buttons">
+                            <a href="#menu" class="mb mbo" title="open the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                <span class="s3"></span>
+                                open the menu
+                            </a>
+                            <a href="#0" class="mb mbc" title="close the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                close the menu
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#0" tabindex="-1" class="overlay" title="close the menu">overlay</a>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <!-- hero section  -->
+        <section class="hero">
+            <div class="container">
+                <div class="row text-md-start text-sm-center text-center gap-md-0 gap-sm-4 gap-5">
+                    <div data-aos="fade-up"
+                        class="col-md-6 d-flex align-items-md-start align-items-ms-center align-items-center justify-content-center flex-column aos-init aos-animate">
+                        <h1 class="main-h1" data-aos="fade-up" data-aos-duration="3000">EMPOWER YOUR IMAGINATION</h1>
+                        <p data-aos="fade-up" data-aos-duration="3000">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem
+                            Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+                        <a class="btn-hover1" href="about.html">Apply Now</a>
+                    </div>
+                    <div data-aos="fade-down"
+                        class="col-md-6 position-relative d-flex flex-column justify-content-center align-items-center mt-md-0 mt-sm-5 mt-4 aos-init aos-animate">
+                        <img src="images/future.png" alt="hero_img1" class="moving" data-aos="zoom-in"
+                            data-aos-duration="2000">
+                        <img src="images/hero_watch.png" class="herostar1"  alt="hero_img2">
+                        <img src="images/hero_star.png" height="15px" class="herostar" alt="hero_icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- about section -->
+        <section class="about">
+            <div class="container">
+                <div class="row text-md-start text-sm-center text-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <div class="ab_card1 aos-init aos-animate" data-aos="flip-left">
+                            <h3>About</h3>
+                            <p class="p-f-s">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem
+                                Ipsum
+                                has
+                                been the industry’s standard dummy text ever since the 1500s, when an unknown
+                                printer
+                                took a
+                                galley of type and scrambled.</p>
+                            <div
+                                class="d-flex align-items-center justify-content-lg-start justify-content-md-center justify-content-center">
+                                <a class="btn-hover1" href="about.html">Learn More</a>
+                                <div class="abut-video">
+                                    <a class="video-play-button" href="#">
+                                        <span class="fa-solid fa-play"></span>
+                                    </a>
+
+                                </div>
+                                <div class="p-f-s w-v">Watch Video</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center mt-md-0 mt-sm-3 mt-3">
+                        <div class="ab_card2 d-flex flex-column justify-content-between aos-init aos-animate"
+                            data-aos="flip-right">
+                            <div>
+                                <div class="row gap-md-0 gap-sm-3 gap-3">
+                                    <div class="col-md-5 col-sm-12 col-12 ">
+                                        <div
+                                            class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                                            <h3 class="count">38</h3>
+                                            <h3>M+</h3>
+                                        </div>
+                                        <p class="p-f-s">Business have already joined us! Business have already
+                                            joined us!</p>
+                                    </div>
+                                    <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                                        <hr>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 col-12 p-0">
+                                        <h3>0%</h3>
+                                        <p class="p-f-s">Zero percent fee to any transaction Zero percent fee to any
+                                            transaction
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex mb-3 mt-4 gap-4 justify-content-md-start justify-content-ms-center justify-content-center">
+                                <div class="position-relative">
+                                    <img src="images/about_card_img1.svg" alt="about_img1">
+                                    <img src="images/about_card_img2.svg" alt="about_img2">
+                                </div>
+                                <div class="ps-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p>So many people like this service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- services section  -->
+        <section class="finance">
+            <div class="container text-center">
+                <h2 class="main-h2">UNLOCKING THE POWER OF COMPUTER SCIENCE</h2>
+                <p class="mt-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus et dolorem error
+                    aspernatur nulla. Ipsa architecto, cupiditate deleniti maiores aut nostrum alias ullam esse
+                    eligendi
+                    corrupti. Odit natus illum fuga?</p>
+                <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure><img src="images/data-analytics.png" alt="praph"></figure>
+                            <h4>Data Analytics</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. specializes in data analytics, offering
+                                cutting-edge solutions for businesses to harness the power of data for informed
+                                decision-making, optimization, and business growth.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure> <img src="images/ai.png" alt="doller"></figure>
+                            <h4>AI & ML Development</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. specializes in AI and ML development, crafting
+                                cutting-edge solutions that leverage artificial intelligence and machine learning to
+                                drive innovation and solve complex problems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure><img src="images/responsive-design.png" alt="arow"></figure>
+                            <h4>Website Design</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. specializes in innovative website design. We
+                                create stunning, user-friendly websites tailored to your needs, ensuring a compelling
+                                online presence for your business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="finanes-card row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure><img src="images/app-settings.png" alt="praph"></figure>
+                            <h4>Moblie App Development</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. specializes in mobile app development, creating
+                                innovative and user-friendly applications to meet diverse business needs. Your mobile
+                                app solutions, our expertise.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center pe-lg-3 pe-md-0 pe-sm-3 pe-3">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure> <img src="images/advertisement.png" alt="doller"></figure>
+                            <h4>Digital Marketing Services</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. offers comprehensive digital marketing services,
+                                optimizing online presence, SEO, PPC, social media, and content strategies for
+                                businesses, driving growth and enhancing brand visibility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 d-flex justify-content-center">
+                        <div class="fin-card aos-init" data-aos="flip-up">
+                            <figure><img src="images/web-design.png" alt="arow"></figure>
+                            <h4>Design & Branding</h4>
+                            <p class="p-f-s">Mitisha Softech Pvt. Ltd. specializes in innovative design and branding
+                                solutions. Our team crafts compelling visual identities, logos, and graphics that
+                                resonate with your audience, elevating your brand's impact.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- reels slider section  -->
+        <div class="container-fluid pt-120 pb-70">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="img_sld">
+                        <div class="reels">
+                            <img src="images/rails.png">
+                            <img src="images/php.png">
+                            <img src="images/js.png">
+                            <img src="images/python-.png">
+                            <img src="images/drupal.png">
+                            <img src="images/magento.png">
+                            <img src="images/net.png">
+                        </div>
+                        <div class="reels">
+                            <img src="images/rails.png">
+                            <img src="images/php.png">
+                            <img src="images/js.png">
+                            <img src="images/python-.png">
+                            <img src="images/drupal.png">
+                            <img src="images/magento.png">
+                            <img src="images/net.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <!-- getway section  -->
+        <section class="gateway">
+            <div class="container">
+                <div class="row gap-lg-0 gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center aos-init aos-animate"
+                        data-aos="fade-up">
+                        <div class=" gateway-bg-img mt-5 ">
+                            <figure><img src="https://o.remove.bg/downloads/83ec4daf-d67f-4cbb-95a2-8c21f918dee7/utch-man-viewed-from-side-behind-laptop-02-copy-5-01_961307-1185-removebg-preview.png" alt="gate_img1" class="moving">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 text-md-start text-sm-center text-center aos-init aos-animate"
+                        data-aos="fade-down">
+                        <h2 class="main-h2">LEARN  WITH  INDUSTRY  PROFESSIONALS</h2>
+                        <p class="pt-lg-4 pt-md-3 pt-sm-2 pt-2 pb-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Perferendis iure eius autem
+                            beatae
+                            mollitia quasi, neque magni excepturi velit ullam sunt eos minima.</p>
+                        <div
+                            class="gate mt-md-3 mt-sm-0 mt-4   d-flex flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="images/gate-icon1.png" alt="gate-img1">
+                            </figure>
+                            <div class="ms-lg-3 ms-md-3 ms-sm-0 ms-0">
+                                <h5 class="pb-2">Create Account</h5>
+                                <p class="p-f-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia illum
+                                    corporis
+                                    voluptatibus nihil? Facilis, sunt.</p>
+                            </div>
+                        </div>
+                        <div class="gate d-flex mt-4  flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="images/gate-icon2.png" alt="gate-img2">
+                            </figure>
+                            <div class="ms-lg-3 ms-md-3 ms-sm-0 ms-0">
+                                <h5 class="pb-2">User Configuration</h5>
+                                <p class="p-f-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia illum
+                                    corporis
+                                    voluptatibus nihil? Facilis, sunt.</p>
+                            </div>
+                        </div>
+                        <div class="gate d-flex mt-4  flex-md-row flex-sm-column flex-column align-items-center">
+                            <figure class="d-flex align-items-center"><img src="images/gate-icon3.png" alt="gate-img3">
+                            </figure>
+                            <div class="ms-lg-3 ms-md-3 ms-sm-0 ms-0">
+                                <h5 class="pb-2">Enjoy Full Access</h5>
+                                <p class="p-f-s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia illum
+                                    corporis
+                                    voluptatibus nihil? Facilis, sunt.</p>
+                            </div>
+                        </div>
+                        <div class="gate-link text-lg-start text-md-start text-sm-center text-center">
+                            <a class="btn-hover1" href="about.html">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- why us section -->
+        <section class="services">
+            <div class="container">
+                <div class="row gap-md-0 gap-sm-4 gap-4">
+                    <div class="col-lg-6 col-md-6 aos-init aos-animate" data-aos="fade-down">
+                        <h2 class="text-lg-start text-md-start text-sm-center text-center main-h2">EXCEPTIONAL SERVICES
+                            AND
+                            SOLUTIONS</h2>
+                        <p
+                            class="text-lg-start text-md-start text-sm-center text-center mt-lg-4 mt-md-2 mt-sm-2 mt-2 pb-4 ">
+                            Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Odio possimus quo ducimus
+                            suscipit
+                            officiis natus impedit et deleniti omnis, sint, facere aliquam asperiores dolores qui id
+                            mollitia obcaecati error perferendis.</p>
+                        <div class=" d-flex  justify-content-center gap-lg-4 gap-md-3 gap-sm-2 gap-2">
+                            <div class="offers">
+                                <h5 class="mb-2">ONE ON ONE DOUBT SESSIONS</h5>
+                                <p class="p-f-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consequatur!</p>
+                            </div>
+                            <div class="offers">
+                                <h5 class=" mb-2">LIFE TIME MENTORSHIP</h5>
+                                <p class="p-f-s">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consequatur!</p>
+                            </div>
+                        </div>
+                        <div
+                            class="serives-btn justify-content-md-start justify-content-ms-center justify-content-center d-flex">
+                            <a class="btn-hover1" href="#">Learn More</a>
+                            <div class="d-flex align-items-center">
+                                <a class="ps-4" href="#">Register Now </a>
+                                <i class="fa-solid fa-greater-than ps-md-3 ps-sm-1 ps-0"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 d-flex align-items-center justify-content-center sevices_img aos-init aos-animate"
+                        data-aos="fade-up">
+                        <div class="position-relative">
+                            <figure><img src="images/dsit3.png" alt="sevice_img2"></figure>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- visa section  -->
+        <section class="visa">
+            <div class="container">
+                <div class="visa-bg aos-init aos-animate" data-aos="zoom-in">
+                    <figure><img src="images/slider2.jpg" alt="visa-img"></figure>
+                </div>
+                <div class="visa-contant aos-init" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 ">
+                            <h3 class="text-md-start text-sm-center text-center">Replacing complexity with
+                                simplicity
+                            </h3>
+                            <p class="text-md-start text-sm-center text-center p-f-s">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Iusto doloribus adipisci facere voluptatum, suscipit deserunt,
+                                cupiditate
+                                facilis impedit assumenda saepe, in vitae labore molestias.</p>
+                            <p class="text-md-start text-sm-center text-center p-f-s">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Nam aut explicabo at qui laudantium.</p>
+                            <div class="visa-btn text-sm-center text-md-start text-center">
+                                <a class="btn-hover1" href="#">Try PayPath Now</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="img_sldd">
+                                            <div class="reels">
+                                                <img src="images/rails.png">
+                                                <img src="images/php.png">
+                                                <img src="images/js.png">
+                                                <img src="images/python-.png">
+                                                <img src="images/drupal.png">
+                                                <img src="images/magento.png">
+                                                <img src="images/net.png">
+                                            </div>
+                                            <div class="reels">
+                                                <img src="images/rails.png">
+                                                <img src="images/php.png">
+                                                <img src="images/js.png">
+                                                <img src="images/python-.png">
+                                                <img src="images/drupal.png">
+                                                <img src="images/magento.png">
+                                                <img src="images/net.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex pt-2 justify-content-md-start justify-content-center justify-content-center">
+                                <h2 class="count main-h2">280</h2>
+                                <h2 class="main-h2">+</h2>
+                                <h6 class="d-flex align-items-center ps-2 ">Integrations</h6>
+                            </div>
+                            <p class="pt-2 pb-3 text-md-start text-sm-center text-center p-f-s">Lorem ipsum dolor sit
+                                amet consectetur, adipisicing elit. Illum
+                                laboriosam
+                                officiis autem ut sit mollitia blanditiis.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- pricing section  -->
+        <section class="pricing pricing-b-g">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6  col-md-6 d-flex align-items-center justify-content-center pricing-bg aos-init aos-animate"
+                        data-aos="fade-up">
+                        <div>
+                            <figure><img src="https://dev.techsimplus.com/uploads/info/Course_Banner/2023/7/10/7222aaae-3-machine_learning.png" alt="pric-img1" class="moving"></figure>
+                            <figure><img src="images/hero_star.png" class="herostar"  id="myDIV" alt="pric-img2"></figure>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-md-0 mt-sm-5 mt-5 aos-init aos-animate" data-aos="fade-down">
+                        <h2 class=" text-md-start text-sm-center text-center main-h2">GET IN TOUCH WITH US</h2>
+                        <p class="text-md-start text-sm-center text-center p-md-0 p-sm-2 p-2">Lorem ipsum, dolor sit
+                            amet consectetur
+                            adipisicing elit. Incidunt excepturi enim vero soluta veritatis quis reprehenderit.
+                            Incidunt
+                            excepturi enim vero soluta veritatis quis reprehenderit.</p>
+                        <div class="pric-list">
+                            <h6>COURSES</h6>
+                            <div class="container-fluid ">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="img_sldd">
+                                            <div class="reels">
+                                                <img src="images/rails.png">
+                                                <img src="images/php.png">
+                                                <img src="images/js.png">
+                                                <img src="images/python-.png">
+                                                <img src="images/drupal.png">
+                                                <img src="images/magento.png">
+                                                <img src="images/net.png">
+                                            </div>
+                                            <div class="reels">
+                                                <img src="images/rails.png">
+                                                <img src="images/php.png">
+                                                <img src="images/js.png">
+                                                <img src="images/python-.png">
+                                                <img src="images/drupal.png">
+                                                <img src="images/magento.png">
+                                                <img src="images/net.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pric-list second">
+                            <h6>Business</h6>
+                            <div class="d-flex justify-content-between">
+                                <div class="mt-3 me-3"><i class="fa-solid fa-check"></i></div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="p-f-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem,
+                                        quia?</p>
+                                    <div class="d-flex pric-sup ">
+                                        <h2 class="main-h2">$</h2>
+                                        <h2 class="main-h2">4.54</h2>
+                                        <p>/month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-md-start text-sm-center text-center pt-lg-4 pt-md-2 pt-sm-0 pt-1">
+                            <a class="btn-hover1" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- faq and testimonial section  -->
+        <div class="main-fnt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-faq">
+                            <h2 class="main-h2">Frequently Asked Questions</h2>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button id="accordion-button-1" aria-expanded="false">
+                                        <span class="accordion-title">Why is the moon sometimes out during the
+                                            day?</span>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo
+                                            duis
+                                            ut.
+                                            Ut tortor pretium viverra suspendisse potenti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-2" aria-expanded="false">
+                                        <span class="accordion-title">Why is the sky blue?</span>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo
+                                            duis
+                                            ut.
+                                            Ut tortor pretium viverra suspendisse potenti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-3" aria-expanded="false">
+                                        <span class="accordion-title">Will we ever discover aliens?</span>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo
+                                            duis
+                                            ut.
+                                            Ut tortor pretium viverra suspendisse potenti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-4" aria-expanded="false">
+                                        <span class="accordion-title">How much does the Earth weigh?</span>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo
+                                            duis
+                                            ut.
+                                            Ut tortor pretium viverra suspendisse potenti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button id="accordion-button-5" aria-expanded="false">
+                                        <span class="accordion-title">How do airplanes stay up?</span>
+                                        <span class="icon" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo
+                                            duis
+                                            ut.
+                                            Ut tortor pretium viverra suspendisse potenti.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-testi">
+                            <h2 class="main-h2 ok">TRUSTED BY PROFESSIONALS</h2>
+                            <section id="testim" class="testim">
+                                <div class="wrap">
+                                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                                    <ul id="testim-dots" class="dots">
+                                        <li class="dot active"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                        <li class="dot"></li>
+                                    </ul>
+                                    <div id="testim-content" class="cont">
+
+                                        <div class="active">
+                                            <div class="img"><img
+                                                    src="https://images.unsplash.com/photo-1625241152315-4a698f74ceb7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+                                                    alt=""></div>
+                                            <h2>R. A. Rao</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco.</p>
+                                        </div>
+
+                                        <div>
+                                            <div class="img"><img
+                                                    src="https://images.unsplash.com/photo-1621787279751-2baabc22d976?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                                    alt=""></div>
+                                            <h2>Aman Singh</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco.</p>
+                                        </div>
+
+                                        <div>
+                                            <div class="img"><img
+                                                    src="https://images.unsplash.com/photo-1562783530-df27356a200d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                                    alt=""></div>
+                                            <h2>Sara Chakraborty</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco.</p>
+                                        </div>
+
+                                        <div>
+                                            <div class="img"><img
+                                                    src="https://images.unsplash.com/photo-1660314019032-268d70002b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                                                    alt=""></div>
+                                            <h2>Aryan Sidana</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco.</p>
+                                        </div>
+
+                                        <div>
+                                            <div class="img"><img
+                                                    src="https://images.unsplash.com/photo-1583058905141-deef2de746bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=588&q=80"
+                                                    alt=""></div>
+                                            <h2>Aadriti Jha</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam,
+                                                quis nostrud exercitation ullamco.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                            <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <!-- blog section  -->
+        <section class="news-section">
+            <div class="container">
+                <div class="main-title-box text-center">
+                    <div class="small-title">News & Blog</div>
+                    <h2 class="big-title main-h2">OUR LATEST NEWS & EVENTS</h2>
+                </div>
+                <div class="row">
+                    <!--Single Blog Start-->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0ms">
+                        <div class="news-item">
+                            <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive"
+                                        src="images/dsit6.webp" alt=""></div>
+                                <div class="news-content">
+                                    <a href="#">
+                                        <h3>The Future of Digital Marketing</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, cons ectet a ur elit. Vestibulum necod ios suspe age
+                                        a to ndisse cursus mal.</p>
+                                    <div class="news_authorinfo">
+                                        <a href="" class="read">Read More</a><i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Blog End-->
+                    <!--Single Blog Start-->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="news-item active">
+                            <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive"
+                                        src="images/dsit7.jpg" alt="" height="300px"></div>
+                                <div class="news-content">
+                                    <a href="#">
+                                        <h3>Successful content marketing plan </h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, cons ectet a ur elit. Vestibulum necod ios suspe age
+                                        a to ndisse cursus mal.</p>
+                                    <div class="news_authorinfo">
+                                        <a href="" class="read">Read More</a><i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Blog End-->
+                    <!--Single Blog Start-->
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="news-item">
+                            <div class="news_box">
+                                <div class="newsimg"><img class="img-responsive"
+                                        src="images/dsit5.jpg" alt="" height="300px"></div>
+                                <div class="news-content">
+                                    <a href="#">
+                                        <h3>Our agency helps to grow creativity</h3>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, cons ectet a ur elit. Vestibulum necod ios suspe age
+                                        a to ndisse cursus mal.</p>
+                                    <div class="news_authorinfo">
+                                        <a href="" class="read">Read More</a><i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Blog End-->
+                    <!--Single Blog Start-->
+
+                    <!--Single Blog End-->
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- form section -->
+        <!-- <div class="main-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="frn-img">
+                            <img src="images/form-img.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-chngs">
+                            <form>
+
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <div class="form-outline">
+                                            <input type="text" id="form6Example1" class="form-control" />
+                                            <label class="form-label" for="form6Example1">First name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-outline">
+                                            <input type="text" id="form6Example2" class="form-control" />
+                                            <label class="form-label" for="form6Example2">Last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form6Example5" class="form-control" />
+                                    <label class="form-label" for="form6Example5">Email</label>
+                                </div>
+
+
+                                <div class="form-outline mb-4">
+                                    <input type="number" id="form6Example6" class="form-control" />
+                                    <label class="form-label" for="form6Example6">Phone</label>
+                                </div>
+
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="form6Example4" class="form-control" />
+                                    <label class="form-label" for="form6Example4">Address</label>
+                                </div>
+
+
+                                <div class="form-outline mb-4">
+                                    <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                                    <label class="form-label" for="form6Example7">Additional information</label>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- close -->
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted main-ftr">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ftr ">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="images/logo.webp" alt="">
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Company
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="about-us.html" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="services.html" class="text-reset">Services</a>
+                            </p>
+                            <p>
+                                <a href="blog.html" class="text-reset">Blog</a>
+                            </p>
+                            <p>
+                                <a href="blog-details.html" class="text-reset">Blog Details</a>
+                            </p>
+                            <p>
+                                <a href="contact-us.html" class="text-reset">Contact Us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="data-analytics.html" class="text-reset">Data Analytics</a>
+                            </p>
+                            <p>
+                                <a href="ai-and-ml-development.html" class="text-reset">AI & ML Development</a>
+                            </p>
+                            <p>
+                                <a href="website-design.html" class="text-reset">Website Design</a>
+                            </p>
+                            <p>
+                                <a href="moblie-app-development.html" class="text-reset">Moblie App Development</a>
+                            </p>
+                            <p>
+                                <a href="digital-marketing-services.html" class="text-reset">Digital Marketing Services</a>
+                            </p>
+                            <p>
+                                <a href="design-and-branding.html" class="text-reset">Design & Branding</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4 ftr-last" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">| Designed By:<a
+                        href="https://www.futuretouch.in/" class="one-chng-f"> Mitisha Softech Pvt. Ltd. </a>| All
+                    rights reserved.</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/348356cdb0.js" crossorigin="anonymous"></script>
+
+    <!-- MDB bootstrap-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
+    <!-- faq js  -->
+    <script>
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute('aria-expanded');
+
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+            }
+
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+    </script>
+    <!-- close -->
+
+    <!-- testimonial js  -->
+    <script>
+        // vars
+        'use strict'
+        var testim = document.getElementById("testim"),
+            testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+            testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+            testimLeftArrow = document.getElementById("left-arrow"),
+            testimRightArrow = document.getElementById("right-arrow"),
+            testimSpeed = 4500,
+            currentSlide = 0,
+            currentActive = 0,
+            testimTimer,
+            touchStartPos,
+            touchEndPos,
+            touchPosDiff,
+            ignoreTouch = 30;
+        ;
+
+        window.onload = function () {
+
+            // Testim Script
+            function playSlide(slide) {
+                for (var k = 0; k < testimDots.length; k++) {
+                    testimContent[k].classList.remove("active");
+                    testimContent[k].classList.remove("inactive");
+                    testimDots[k].classList.remove("active");
+                }
+
+                if (slide < 0) {
+                    slide = currentSlide = testimContent.length - 1;
+                }
+
+                if (slide > testimContent.length - 1) {
+                    slide = currentSlide = 0;
+                }
+
+                if (currentActive != currentSlide) {
+                    testimContent[currentActive].classList.add("inactive");
+                }
+                testimContent[slide].classList.add("active");
+                testimDots[slide].classList.add("active");
+
+                currentActive = currentSlide;
+
+                clearTimeout(testimTimer);
+                testimTimer = setTimeout(function () {
+                    playSlide(currentSlide += 1);
+                }, testimSpeed)
+            }
+
+            testimLeftArrow.addEventListener("click", function () {
+                playSlide(currentSlide -= 1);
+            })
+
+            testimRightArrow.addEventListener("click", function () {
+                playSlide(currentSlide += 1);
+            })
+
+            for (var l = 0; l < testimDots.length; l++) {
+                testimDots[l].addEventListener("click", function () {
+                    playSlide(currentSlide = testimDots.indexOf(this));
+                })
+            }
+
+            playSlide(currentSlide);
+
+            // keyboard shortcuts
+            document.addEventListener("keyup", function (e) {
+                switch (e.keyCode) {
+                    case 37:
+                        testimLeftArrow.click();
+                        break;
+
+                    case 39:
+                        testimRightArrow.click();
+                        break;
+
+                    case 39:
+                        testimRightArrow.click();
+                        break;
+
+                    default:
+                        break;
+                }
+            })
+
+            testim.addEventListener("touchstart", function (e) {
+                touchStartPos = e.changedTouches[0].clientX;
+            })
+
+            testim.addEventListener("touchend", function (e) {
+                touchEndPos = e.changedTouches[0].clientX;
+
+                touchPosDiff = touchStartPos - touchEndPos;
+
+                console.log(touchPosDiff);
+                console.log(touchStartPos);
+                console.log(touchEndPos);
+
+
+                if (touchPosDiff > 0 + ignoreTouch) {
+                    testimLeftArrow.click();
+                } else if (touchPosDiff < 0 - ignoreTouch) {
+                    testimRightArrow.click();
+                } else {
+                    return;
+                }
+
+            })
+        }
+    </script>
+    <!-- close -->
+
+    <!-- animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- close -->
+    <!-- modal js  -->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 27:
+                    modal.style.display = "none";
+                    break;
+                default:
+                    return;
+            }
+        };
+    </script>
+
+</body>
+
+</html>

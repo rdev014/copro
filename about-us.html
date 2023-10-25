@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About-Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remix3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="first_nav_hero_about">
+
+        <!-- navber -->
+        <div class="main-display">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+                <!-- Container wrapper -->
+                <div class="container-fluid">
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarRightAlignExample" aria-controls="navbarRightAlignExample"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                    <!-- Collapsible wrapper -->
+                    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+                        <div class="logo">
+                            <a href="index.html"> <img src="images/logo.webp" alt=""></a>
+                        </div>
+                        <!-- Left links -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-changes">
+                            <li id="myBtn" class="login">
+                                <a class="nav-link active blink" style="color: red; font-size: larger;" aria-current="page" href="#">Apply Internship</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="dropdown drp">
+                                <a href="services.html">Services</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="data-analytics.html">Data Analytics</a></li>
+                                    <li><a href="ai-and-ml-development.html">AI & ML Development</a></li>
+                                    <li><a href="website-design.html">Website Design</a></li>
+                                    <li><a href="moblie-app-development.html">Moblie App Development</a></li>
+                                    <li><a href="digital-marketing-services.html">Digital Marketing</a></li>
+                                    <li><a href="design-and-branding.html">Design & Branding</a></li>
+                                </ul>
+                            </li>
+
+                            
+                            <div id="myModal" class="modal">
+                                <div class="modal-cont" style="display: block;">
+                                    <div class="modal-box">
+                                        <span class="close">×</span>
+                                        <form class="login-box" action="intern.php" method="post"
+                                            enctype="multipart/form-data" name="form"
+                                            onsubmit="return Form2_Validator(this)">
+                                            <h1> INTERNSHIP FORM </h1>
+                                            <div class="form-group main-f">
+                                                <input type="text" name="S_name" id="S_name" class="form-control"
+                                                    placeholder="Full Name" required="">
+
+                                                <input type="text" name="S_fname" id="S_fname" class="form-control"
+                                                    placeholder="Father Name" required="">
+
+                                            </div>
+                                            <div class="form-group main-f">
+                                                <input type="email" name="S_email" id="S_email" class="form-control"
+                                                    placeholder="Your Email" required="">
+
+                                                <input type="text" name="S_phone" id="S_phone" class="form-control"
+                                                    placeholder="Phone No" required="">
+
+
+                                            </div>
+
+                                            <div class="form-group main-f">
+                                                <input type="text" name="Location_in" id="Location_in"
+                                                    class="form-control" placeholder="Institute Name">
+
+                                                <select id="dropdown" name="s_type" class="form-control" required="">
+                                                    <option disabled="" selected="" value="">Technology</option>
+                                                    <option value="Php">Php</option>
+                                                    <option value="Java">Java</option>
+                                                    <option value="IOT">IOT</option>
+                                                    <option value="Big Data">Big Data</option>
+                                                    <option value="Digital Marketing">Digital Marketing</option>
+                                                    <option value="Laravel">Laravel</option>
+                                                    <option value="Kotlin">Kotlin</option>
+                                                    <option value="Cloud Computing">Cloud Computing</option>
+                                                    <option value="Machine Learning/AI">Machine Learning/AI</option>
+                                                    <option value="Pyhton">Pyhton</option>
+                                                    <option value="Finance/HR/Marketing">Finance/HR/Marketing</option>
+                                                    <option value="Embedded System">Embedded System</option>
+                                                    <option value="Software Testing">Software Testing</option>
+                                                    <option value="Ethical Hacking">Ethical Hacking</option>
+                                                    <option value="Android">Android</option>
+                                                    <option value="Dot Net">Dot Net</option>
+                                                    <option value="Graphic Desgining">Graphic Desgining</option>
+                                                    <option value="Java Script">Java Script</option>
+                                                    <option value="Flutter">Flutter</option>
+                                                    <option value="Node Js">Node Js</option>
+                                                    <option value="Angular">Angular</option>
+                                                    <option value="MERN">MERN</option>
+                                                    <option value="MEAN">MEAN</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Data Structure">Data Structure</option>
+                                                    <option value="Data Science">Data Science</option>
+                                                    <option value="Full Stack Development">Full Stack Development
+                                                    </option>
+                                                    <option value="Web Designing">Web Designing</option>
+                                                    <option value="React Native">React Native</option>
+                                                    <option value="Autocad">Autocad</option>
+                                                    <option value="PLC">PLC</option>
+                                                    <option value="SCADA">SCADA</option>
+                                                    <option value="CAD/CAM">CAD/CAM</option>
+                                                    <option value="Full Stack Developer">Full Stack Developer</option>
+                                                    <option value="Networking">Networking</option>
+                                                    <option value="Devops">Devops</option>
+                                                    <option value="Solid Works">Solid Works</option>
+                                                    <option value="React Js">React Js</option>
+                                                    <option value="Deep Learning">Deep Learning</option>
+                                                    <option value="UI/UX Designing">UI/UX Designing</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+
+
+                                            </div>
+
+                                            <div class="main-b" id="Location_form" name="Location_form">
+                                                <h3>Duration</h3>
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main-o" name="radio">
+                                                    <label for="main-o" value="6-Month">6
+                                                        Month</label>
+                                                </div>
+
+                                                <div class="checkbox">
+                                                    <input type="radio" id="main" name="radio">
+                                                    <label for="main" value="6-Week">6
+                                                        Week</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <textarea id="Location_to" name="Location_to" class="input-textarea"
+                                                    placeholder="Address"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea id="message" name="message" class="input-textarea"
+                                                    placeholder="Why you want to do internship?"></textarea>
+                                            </div>
+
+                                            <button class="cancel">Cancel</button>
+                                            <button class="cancel" value="submit">Submit</button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contact-us.html">Contact Us</a>
+                            </li>
+                            <nav role='navigation'>
+                                <div id="menuToggle">
+                                    <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <ul id="menu">
+                                        <a href="index.html" class="side-manu">
+                                            <img src="images/logo.webp" alt="">
+                                        </a>
+                                        <p class="mt-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <a href="#" class="btn-hover1">Discover More</a>
+                                        <hr>
+                                        <h5 class="mt-4 mb-4 text-white">Connected details:</h5>
+                                        <ul class="d-flex flex-column ">
+                                            <li>
+                                                <a href="#"> <i class="fa-solid fa-phone"></i></a>
+                                                <a href="#">yourname@email.com</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                                                <a href="#">+123-456-7890</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa-solid fa-clock"></i></a>
+                                                <a href="#">Office Hours: 8AM - 11PM Sunday -
+                                                    Weekend Day</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- mobile nav -->
+        <div class="main-mobile">
+            <div class="viewport">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <a href="index.html"> <img src="images/logo.webp" alt=""></a>
+                    </div>
+                    <div class="menu clearfix" id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About-Us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown"
+                                    role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <!-- Dropdown menu -->
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="industrial-construction.html">Industrial
+                                            construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="commercial-construction.html">Commercial
+                                            Constructiont</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="residential-construction.html">Residential
+                                            Construction</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="govt-construction.html">Govt Construction</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                        <div class="buttons">
+                            <a href="#menu" class="mb mbo" title="open the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                <span class="s3"></span>
+                                open the menu
+                            </a>
+                            <a href="#0" class="mb mbc" title="close the menu">
+                                <span class="s1"></span>
+                                <span class="s2"></span>
+                                close the menu
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#0" tabindex="-1" class="overlay" title="close the menu">overlay</a>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <!-- about-us section -->
+        <div class="ltn__about-us-area pb-90 pt-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center">
+                        <div class="about-us-img-wrap about-img-left">
+                            <div class="ltn__video-img ltn__video-img-before-none ltn__animation-pulse2">
+                                <img src="images/about-pg.png" alt="video popup bg image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 align-self-center">
+                        <div class="about-us-info-wrap">
+                            <div class="section-title-area ltn__section-title-2">
+                                <h6 class="section-subtitle ltn__secondary-color"><span><i
+                                            class="fas fa-square-full"></i></span>About-Us</h6>
+                                <h1 class="section-title">ABOUT AGENCY!</h1>
+                                <p>Construction is a general term meaning the art and science to form objects
+                                    systems organizations, and comes from Latin</p>
+                            </div>
+                            <p>Construction is a general term meaning the art and science to form objects systems
+                                organizations, and comes from Latin construction and Old French construction. To
+                                construct is the verb: the act of building, and the noun</p>
+                            <div class="about-author-info d-flex mt-50">
+                                <div class="author-name-designation  align-self-center mr-30">
+                                    <div class="btn-wrapper mt-0">
+                                        <a class="btn theme-btn-2 btn-effect-1 finbyz-button btn-form-submit"
+                                            href="about.html">About Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- close -->
+
+        <!-- our mission section  -->
+        <section _ngcontent-ng-c879476470="" class="about-area ">
+            <div _ngcontent-ng-c879476470="" class="container">
+                <div _ngcontent-ng-c879476470="" class="row align-items-center">
+                    <div _ngcontent-ng-c879476470="" class="col-lg-6 col-md-12">
+                        <div _ngcontent-ng-c879476470="" class="about-content"><span _ngcontent-ng-c879476470=""
+                                class="sub-title"></span>
+                            <h2 _ngcontent-ng-c879476470="">Mission</h2>
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems' mission is to empower
+                                businesses through innovative IT solutions. We strive to provide cutting-edge
+                                technology, exceptional service, and digital transformation, enabling our
+                                clients to thrive in the dynamic digital landscape.
+                            </p>
+
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems is dedicated to revolutionizing
+                                the IT industry by delivering tailored solutions. Our mission is to drive
+                                technological excellence, foster growth, and enhance operational efficiency for
+                                businesses worldwide through our commitment to innovation, quality, and client
+                                success.</p>
+
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems is on a mission to redefine the
+                                IT landscape. We're dedicated to creating transformative solutions that empower
+                                businesses to excel. Our commitment to innovation, quality, and client success
+                                drives us to lead in the ever-evolving world of technology.</p>
+                        </div>
+                    </div>
+                    <div _ngcontent-ng-c879476470="" class="col-lg-6 col-md-12">
+                        <div _ngcontent-ng-c879476470="" class="about-image"><img _ngcontent-ng-c879476470=""
+                                src="images/mission.png" alt="image"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- our vision section  -->
+        <section _ngcontent-ng-c879476470="" class="about-area pt-120 pb-90">
+            <div _ngcontent-ng-c879476470="" class="container">
+                <div _ngcontent-ng-c879476470="" class="row align-items-center">
+                    <div _ngcontent-ng-c879476470="" class="col-lg-6 col-md-12">
+                        <div _ngcontent-ng-c879476470="" class="about-image"><img _ngcontent-ng-c879476470=""
+                                src="images/vision.png" alt="image"></div>
+                    </div>
+                    <div _ngcontent-ng-c879476470="" class="col-lg-6 col-md-12">
+                        <div _ngcontent-ng-c879476470="" class="about-content"><span _ngcontent-ng-c879476470=""
+                                class="sub-title"></span>
+                            <h2 _ngcontent-ng-c879476470="">Vision</h2>
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems envisions pioneering IT
+                                solutions, harnessing innovation to empower businesses worldwide. Our commitment
+                                to excellence drives us to deliver cutting-edge technology, fostering a brighter
+                                digital future.
+                            </p>
+
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems aspires to be a global leader in
+                                IT, driving innovation and providing transformative solutions. We aim to
+                                revolutionize industries, ensuring sustainable growth and technological
+                                advancement for a brighter, interconnected world.</p>
+
+                            <p _ngcontent-ng-c879476470="">Aqua Global Systems is dedicated to shaping a future
+                                where IT transcends boundaries, fueling progress in diverse industries. Our
+                                vision is to be the foremost catalyst for innovation, fostering global
+                                connectivity and sustainable technological evolution.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- about section -->
+        <section class="about">
+            <div class="container">
+                <div class="row text-md-start text-sm-center text-center">
+                    <div class="col-md-6 d-flex justify-content-between">
+                        <div class="ab_card1 aos-init aos-animate" data-aos="flip-left">
+                            <h3>About</h3>
+                            <p class="p-f-s">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem
+                                Ipsum
+                                has
+                                been the industry’s standard dummy text ever since the 1500s, when an unknown
+                                printer
+                                took a
+                                galley of type and scrambled.</p>
+                            <div
+                                class="d-flex align-items-center justify-content-lg-start justify-content-md-center justify-content-center">
+                                <a class="btn-hover1" href="about.html">Learn More</a>
+                                <div class="abut-video">
+                                    <a class="video-play-button" href="#">
+                                        <span class="fa-solid fa-play"></span>
+                                    </a>
+
+                                </div>
+                                <div class="p-f-s w-v">Watch Video</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center mt-md-0 mt-sm-3 mt-3">
+                        <div class="ab_card2 d-flex flex-column justify-content-between aos-init aos-animate"
+                            data-aos="flip-right">
+                            <div>
+                                <div class="row gap-md-0 gap-sm-3 gap-3">
+                                    <div class="col-md-5 col-sm-12 col-12 ">
+                                        <div
+                                            class="d-flex justify-content-md-start justify-content-sm-center justify-content-center">
+                                            <h3 class="count">38</h3>
+                                            <h3>M+</h3>
+                                        </div>
+                                        <p class="p-f-s">Business have already joined us! Business have already
+                                            joined us!</p>
+                                    </div>
+                                    <div class="col-2 p-0 d-flex justify-content-center align-items-center">
+                                        <hr>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 col-12 p-0">
+                                        <h3>0%</h3>
+                                        <p class="p-f-s">Zero percent fee to any transaction Zero percent fee to any
+                                            transaction
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex mb-3 mt-4 gap-4 justify-content-md-start justify-content-ms-center justify-content-center">
+                                <div class="position-relative">
+                                    <img src="images/about_card_img1.svg" alt="about_img1">
+                                    <img src="images/about_card_img2.svg" alt="about_img2">
+                                </div>
+                                <div class="ps-2">
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <p>So many people like this service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- close -->
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted main-ftr">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ftr ">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <img src="images/logo.webp" alt="">
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Company
+                            </h6>
+                            <p>
+                                <a href="index.html" class="text-reset">Home</a>
+                            </p>
+                            <p>
+                                <a href="about-us.html" class="text-reset">About Us</a>
+                            </p>
+                            <p>
+                                <a href="services.html" class="text-reset">Services</a>
+                            </p>
+                            <p>
+                                <a href="blog.html" class="text-reset">Blog</a>
+                            </p>
+                            <p>
+                                <a href="blog-details.html" class="text-reset">Blog Details</a>
+                            </p>
+                            <p>
+                                <a href="contact-us.html" class="text-reset">Contact Us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="data-analytics.html" class="text-reset">Data Analytics</a>
+                            </p>
+                            <p>
+                                <a href="ai-and-ml-development.html" class="text-reset">AI & ML Development</a>
+                            </p>
+                            <p>
+                                <a href="website-design.html" class="text-reset">Website Design</a>
+                            </p>
+                            <p>
+                                <a href="moblie-app-development.html" class="text-reset">Moblie App Development</a>
+                            </p>
+                            <p>
+                                <a href="digital-marketing-services.html" class="text-reset">Digital Marketing Services</a>
+                            </p>
+                            <p>
+                                <a href="design-and-branding.html" class="text-reset">Design & Branding</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ftr">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                info@example.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4 ftr-last" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Copyright:
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">| Designed By:<a
+                        href="https://www.futuretouch.in/" class="one-chng-f"> Mitisha Softech Pvt. Ltd. </a>| All
+                    rights reserved.</a>
+            </div>
+            <!-- Copyright -->
+            
+        </footer>
+        <!-- Footer -->
+
+    </div>
+
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/348356cdb0.js" crossorigin="anonymous"></script>
+
+    <!-- MDB bootstrap-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+
+    <!-- animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- close -->
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        document.onkeydown = function (e) {
+            switch (e.keyCode) {
+                case 27:
+                    modal.style.display = "none";
+                    break;
+                default:
+                    return;
+            }
+        };
+    </script>
+</body>
+
+</html>
